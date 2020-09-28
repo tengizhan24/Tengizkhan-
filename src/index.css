@@ -1,0 +1,88 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  /* background: black;  */
+  color: #FFF;
+}
+
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+}
+
+.todo{
+  /* color: red; */
+  padding: 20px 30px;
+  background:url();
+}
+
+.todo-list{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.todo-list__item{
+  border: 1px solid #000;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 5px 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-list__item.checked{
+  text-decoration: line-through;
+  color: #ffffff87;
+}
+
+.todo-item__btn{
+  background-color: transparent;
+  color: #000;
+  /* border: 1px solid #FFF; */
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.btn-del:hover{
+  color: red;
+}
+.btn-edit:hover{
+  color: yellow;
+}
+
+.edit-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.edit-inp{
+  background-color: transparent;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.edit-form-btn{
+  background-color: transparent;
+  color: #000;
+  border: 1px solid #000;
+  padding: 5px 10px;
+  font-size: 20px;
+  width: 50%;
+  cursor: pointer;
+  transition: .2s;
+}
+.edit-form-btn:hover{
+  background-color: #000;
+  color: #FFF;
+}
